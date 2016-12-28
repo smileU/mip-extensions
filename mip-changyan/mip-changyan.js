@@ -14,7 +14,7 @@ define(function (require) {
         var viewport = require('viewport');
         var width = viewport.getWidth();
         if (criWidth != null && width < criWidth) {
-            var html = '<script src="https://changyan.sohu.com/upload/mobile/wap-js/changyan_mobile.js?client_id=' + appid + '&conf=' + conf + '"><\/script>';
+            var html = '<script src="http://changyan.sohu.com/upload/mobile/wap-js/changyan_mobile.js?client_id=' + appid + '&conf=' + conf + '"><\/script>';
             window.document.write(html);
         }
         else {
@@ -40,7 +40,7 @@ define(function (require) {
                 }
                 htmlTag.appendChild(scriptTag);
             };
-            loadJs('https://changyan.sohu.com/upload/changyan.js', function () {
+            loadJs('http://changyan.sohu.com/upload/changyan.js', function () {
                 window.changyan.api.config({
                     appid: appid,
                     conf: conf
